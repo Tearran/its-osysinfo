@@ -13,7 +13,7 @@ Build executible
 {
 git clone https://github.com/Tearran/its-osysinfo ~/.local/src/its-osysinfo/
 
-bash build.bash
+cd ~/.local/src/its-osysinfo/ && bash build.bash
 
 sudo reboot
 }
