@@ -8,7 +8,7 @@ sudo apt update && sudo apt install git python3-pip zip
 sudo pip3 install luma.core luma.lcd luma.oled
 }
 ```
-Build bin
+Build executible
 ```bash
 {
 git clone https://github.com/Tearran/its-osysinfo ~/.local/src/its-osysinfo/
