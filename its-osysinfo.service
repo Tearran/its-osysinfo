@@ -1,0 +1,9 @@
+[Unit]
+Description=Starts System graph on ssd1306
+DefaultDependencies=false
+[Service]
+Type=simple
+ExecStart=/usr/bin/its-osysinfo
+WorkingDirectory=/usr/bin/
+[Install]
+WantedBy=rc-local.service
