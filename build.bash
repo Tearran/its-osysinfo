@@ -28,3 +28,5 @@ echo '#!/usr/bin/env python3' | cat - $execName.zip > $installedName
 # sudo pip3 install luma.core luma.lcd luma.oled
 sudo install -b -v $installedName /usr/bin/
 sudo install "$src/its-osysinfo.service" "/etc/systemd/system/its-osysinfo.service"
+sudo sudo systemctl enable its-osysinfo.service
+sudo sudo systemctl start its-osysinfo.service
