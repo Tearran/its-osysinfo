@@ -11,10 +11,8 @@ sudo pip3 install luma.core luma.lcd luma.oled
 Build executible
 ```bash
 {
-git clone https://github.com/Tearran/its-osysinfo ~/.local/src/its-osysinfo/
-
+git clone https://github.com/Tearran/its_osysinfo ~/.local/src/its-osysinfo/
 cd ~/.local/src/its-osysinfo/ && bash build.bash
-
 sudo reboot
 }
 ```
