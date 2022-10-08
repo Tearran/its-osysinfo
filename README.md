@@ -12,7 +12,6 @@ Build executible
 ```bash
 {
 git clone https://github.com/Tearran/its_osysinfo ~/.local/src/its_osysinfo/
-cd ~/.local/src/its-osysinfo/ && bash install.sh
-
+cd ~/.local/src/its_osysinfo/ && bash install.sh
 }
 ```
