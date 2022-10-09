@@ -6,14 +6,26 @@ System info graph on an ssd1306
 - zip
 - its-i2cScan
 
+## Console Autologin
+To record HDMI 
+`{bash clear} > /dev/tty1`
+
+to tty1 from ssh
+
+
+```bash
+sudo raspi-config nonint do_boot_behaviour B2
+```
 ## system requierments
 ```bash 
-sudo apt update
-sudo apt install git zip python3-pip python3-pil libopenjp2-7
-sudo pip3 install luma.core luma.lcd luma.oled psutil
-wget https://raw.githubusercontent.com/Tearran/its-i2cScan/main/build.bash && bash build.bash
-sleep 1 && clear
-/usr/bin/its-i2cScan 1
+{
+sudo apt update > /dev/tty
+sudo apt install git zip python3-pip python3-pil libopenjp2-7 > /dev/tty
+sudo pip3 install luma.core luma.lcd luma.oled psutil > /dev/tty
+wget https://raw.githubusercontent.com/Tearran/its-i2cScan/main/build.bash && bash build.bash > /dev/tty
+sleep 1 && clear > /dev/tty
+/usr/bin/its-i2cScan 1 > /dev/tty
+}
 ```
 
 Build and install
