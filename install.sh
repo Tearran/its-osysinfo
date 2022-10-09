@@ -10,7 +10,7 @@ installedName=$( echo ${buildName} | sed 's|_|-|g' )
 
 cd $src || ( echo "faild build" && exit )
 
-yes | rm -r .git || ( echo "faild rm .git" && exit )
+
 
 ## compress the contents to a zip
 sudo apt update
@@ -21,6 +21,7 @@ sleep 1 && clear
 its-its-i2cScan 1
 
 git clone https://github.com/Tearran/its_osysinfo.git ~/.local/src/its_osysinfo/; cd ~/.local/src/its_osysinfo/
+
 
 [ -e /usr/bin/zip ] && zip -r ../$execName.zip ./* 
 
