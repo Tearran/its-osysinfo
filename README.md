@@ -18,14 +18,14 @@ sudo raspi-config nonint do_boot_behaviour B2
 ```
 ## system requierments
 ```bash 
-{
+{ 
 sudo apt update
 sudo apt install git zip python3-pip python3-pil libopenjp2-7 
 sudo pip3 install luma.core luma.lcd luma.oled psutil 
 wget https://raw.githubusercontent.com/Tearran/its-i2cScan/main/build.bash && bash build.bash
 sleep 1 
 /usr/bin/its-i2cScan 1 
-} > /dev/tty
+} > /dev/tty1
 ```
 
 Build and install
