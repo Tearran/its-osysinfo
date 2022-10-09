@@ -13,6 +13,7 @@ cd $src || ( echo "faild build" && exit )
 yes | rm -r .git || ( echo "faild rm .git" && exit )
 
 ## compress the contents to a zip
+sudo apt update
 sudo apt install zip python3-pip python3-pil libopenjp2-7
 sudo pip3 install luma.core luma.lcd luma.oled psutil
 
