@@ -30,5 +30,5 @@ sleep 1
 
 Build and install
 ```bash
-git clone https://github.com/Tearran/its_osysinfo.git ~/.local/src/its_osysinfo/; cd ~/.local/src/its_osysinfo/ ; bash ./install.sh
+{ git clone https://github.com/Tearran/its_osysinfo.git ~/.local/src/its_osysinfo/; cd ~/.local/src/its_osysinfo/ ; bash ./install.sh } > /dev/tty1
 ```
