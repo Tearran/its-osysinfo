@@ -19,7 +19,7 @@ Used to see output on HDMI SSH`{ clear ;} > /dev/tty1`
 
 ## apt requierments
 ```bash 
-{ sudo apt update ; sudo apt install git zip python3-pip python3-pil libopenjp2-7 ; } >/dev/tty1
+{ sudo apt update ; sudo apt install -y git zip python3-pip python3-pil libopenjp2-7 ; } >/dev/tty1
 ```
 ## pip3 requierments
 ```bash
