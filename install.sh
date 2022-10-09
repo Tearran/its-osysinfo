@@ -13,8 +13,12 @@ cd $src || ( echo "faild build" && exit )
 yes | rm -r .git || ( echo "faild rm .git" && exit )
 
 ## compress the contents to a zip
-sudo apt install zip git python3-pip python3-pil libopenjp2-7
+sudo apt install zip python3-pip python3-pil libopenjp2-7
 sudo pip3 install luma.core luma.lcd luma.oled psutil
+
+wget https://raw.githubusercontent.com/Tearran/its-i2cScan/main/build.bash && bash build.bash
+sleep 1 && clear
+its-its-i2cScan 1
 
 [ -e /usr/bin/zip ] && zip -r ../$execName.zip ./* 
 
